@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>quiz</title>
+</head>
+<body>
+    <!-- intro -->
+    <div class="intro py-3 bg-white  text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Fun with Quiz</h2>
+        </div>
+    </div>
+
+    <!-- user section -->
+    <div class="user py-2 bg-white text-center">
+        <div class="container">
+            <div class="askInfo">
+                <p class="display-4">What's your name?</p>
+                <input type="text" class="username">
+                <br>
+                <br>
+                <button class="go btn btn-primary">Go!</button>
+                <br>
+            </div>
+
+            <h3 class="username display-5 d-none">Welcome to my website 
+                <span class="text-primary display-4">username</span>
+            </h3>
+        </div>
+    </div>
+
+    <!-- result section -->
+    <div class="result py-2 bg-white text-center d-none">
+        <div class="container">
+            <p class="display-4">You are 
+                <span class="display-2 text-primary"></span> 
+                correct</p>
+        </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-4 bg-primary d-none">
+        <div class="container">
+            <h2 class="my-5 text-white">Here is the Questions</h2>
+
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. What is the capital of India?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A">
+                        <label class="form-check-label">Mumbai</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Delhi</label>
+                    </div>
+                    <br>
+
+                    <p class="lead font-weight-normal">2. By sass file what can we define?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A">
+                        <label class="form-check-label">css</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">javaScript</label>
+                    </div>
+                    <br>
+
+                    <p class="lead font-weight-normal">3. Which method returns the type of any data type?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A">
+                        <label class="form-check-label">type( )</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">typeof( )</label>
+                    </div>
+                    <br>
+
+                    <p class="lead font-weight-normal">4. Which method returns a given string to its upper case equivalent?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A">
+                        <label class="form-check-label">toUpper( )</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">toUpperCase( )</label>
+                    </div>
+                    <br>
+
+                    <p class="lead font-weight-normal">5. To access the inner text of any element which property is used?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="A">
+                        <label class="form-check-label">textContent</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">innerHTML</label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
