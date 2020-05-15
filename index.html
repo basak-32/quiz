@@ -42,6 +42,13 @@
         </div>
     </div>
 
+    <!-- thanking section -->
+    <div class="thanking py-2 bg-white text-primary text-center d-none">
+        <div class="container">
+            <h3>Thank you for visiting! Have a good day.</h3>
+        </div>
+    </div>
+
     <!-- quiz section -->
     <div class="quiz py-4 bg-primary d-none">
         <div class="container">
@@ -49,65 +56,86 @@
 
             <form class="quiz-form text-light">
                 <div class="my-5">
-                    <p class="lead font-weight-normal">1. What is the capital of India?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q1" value="A">
-                        <label class="form-check-label">Mumbai</label>
+                    <div class="question1">
+                        <p class="lead font-weight-normal">1. What is the capital of India?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q1" value="A">
+                            <label class="form-check-label">Mumbai</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q1" value="B">
+                            <label class="form-check-label">Delhi</label>
+                        </div>
                     </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q1" value="B">
-                        <label class="form-check-label">Delhi</label>
-                    </div>
-                    <br>
 
-                    <p class="lead font-weight-normal">2. By sass file what can we define?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q2" value="A">
-                        <label class="form-check-label">css</label>
-                    </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q2" value="B">
-                        <label class="form-check-label">javaScript</label>
-                    </div>
-                    <br>
+                    <!-- <br> -->
 
-                    <p class="lead font-weight-normal">3. Which method returns the type of any data type?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q3" value="A">
-                        <label class="form-check-label">type( )</label>
+                    <div class="question2">
+                        <p class="lead font-weight-normal">2. By sass file what can we define?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q2" value="A">
+                            <label class="form-check-label">css</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q2" value="B">
+                            <label class="form-check-label">javaScript</label>
+                        </div>
                     </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q3" value="B">
-                        <label class="form-check-label">typeof( )</label>
-                    </div>
-                    <br>
+                    
+                    <!-- <br> -->
 
-                    <p class="lead font-weight-normal">4. Which method returns a given string to its upper case equivalent?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q4" value="A">
-                        <label class="form-check-label">toUpper( )</label>
+                    <div class="question3">
+                        <p class="lead font-weight-normal">3. Which method returns the type of any data type?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q3" value="A">
+                            <label class="form-check-label">type( )</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q3" value="B">
+                            <label class="form-check-label">typeof( )</label>
+                        </div>
                     </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q4" value="B">
-                        <label class="form-check-label">toUpperCase( )</label>
-                    </div>
-                    <br>
+                    
+                    <!-- <br> -->
 
-                    <p class="lead font-weight-normal">5. To access the inner text of any element which property is used?</p>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q5" value="A">
-                        <label class="form-check-label">textContent</label>
+                    <div class="question4">
+                        <p class="lead font-weight-normal">4. Which method returns a given string to its upper case equivalent?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="A">
+                            <label class="form-check-label">toUpper( )</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="B">
+                            <label class="form-check-label">toUpperCase( )</label>
+                        </div>    
                     </div>
-                    <div class="form-check my-2 text-white-50">
-                        <input type="radio" name="q5" value="B">
-                        <label class="form-check-label">innerHTML</label>
+                    
+                    <!-- <br> -->
+
+                    <div class="question5">
+                        <p class="lead font-weight-normal">5. To access the inner text of any element which property is used?</p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q5" value="A">
+                            <label class="form-check-label">textContent</label>
+                        </div>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q5" value="B">
+                            <label class="form-check-label">innerHTML</label>
+                        </div>
                     </div>
+                    
                 </div>
 
-                <div class="text-center">
+                <div class="text-center submitButton">
                     <input type="submit" class="btn btn-light">
                 </div>
             </form>
+
+            <div class="text-center">
+                <button class="reviewButton btn btn-primary bg-white text-primary d-none">Finish review</button>
+            </div>
+                
+            </div>
         </div>
     </div>
 

@@ -8,6 +8,20 @@ const username = document.querySelector('h3');
 const input = document.querySelector('input');
 const askInfo = document.querySelector('.askInfo');
 const quiz = document.querySelector('.quiz');
+const submitButton = document.querySelector('.submitButton');
+const thanking = document.querySelector('.thanking');
+const reviewButton = document.querySelector('.reviewButton');
+
+// console.log(form.children[0].children[0].children[1].children[1].classList);
+// form
+// .children[0]
+// .children[0]
+// .children[1]
+// .children[1]
+// .classList
+// .add('text-danger');
+
+
 
 
 button.addEventListener('click', event => {
@@ -40,13 +54,58 @@ form.addEventListener('submit', function (event) {
         form.q5.value
     ]
 
+
+
+
+    // let wrongAnswers = [];
+    // let j = 0;
+    // for (let i = 0; i < 5; i++) {
+    //     if (userAnswers[i] !== correctAnswers[i]) {
+    //         wrongAnswers[j++] += userAnswers[i];
+    //     }
+    // }
+
+    // console.log(wrongAnswers);
+
+
     let score = 0;
+    let wrongAnswers = [];
+    let x = 0;
 
     userAnswers.forEach((answer,index) => {
         if (answer === correctAnswers[index]) {
             score += 20;
+
+            if (answer === 'A') {
+                x = 1;
+            } else {
+                x = 2;
+            }
+            form
+            .children[0]
+            .children[index]
+            .children[x]
+            .children[1]
+            .classList
+            .add('text-success');
+        } else {
+            wrongAnswers.push(answer);
+
+            if (answer === 'A') {
+                x = 1;
+            } else {
+                x = 2;
+            }
+            form
+            .children[0]
+            .children[index]
+            .children[x]
+            .children[1]
+            .classList
+            .add('text-danger');
         }
-    })
+    });
+    // console.log(wrongAnswers);
 
     scrollTo(0, 0);
     
@@ -61,6 +120,15 @@ form.addEventListener('submit', function (event) {
             i++;
         }
     },30);
+
+    submitButton.classList.add('d-none');
+    reviewButton.classList.remove('d-none');
+
+
+    reviewButton.addEventListener('click', () => {
+        thanking.classList.remove('d-none');
+        quiz.classList.add('d-none');
+    });
 
 
 });
